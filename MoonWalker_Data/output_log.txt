@@ -1,0 +1,31 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1985 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Yoshiki Iimori\Documents\Unity\ActionGame\MoonWalker_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.286660 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.214622 ms (FindLiveObjects: 0.016203 ms CreateObjectMapping: 0.009638 ms MarkObjects: 0.176349 ms  DeleteObjects: 0.008311 ms)
+
