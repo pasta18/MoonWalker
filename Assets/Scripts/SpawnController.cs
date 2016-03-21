@@ -3,8 +3,10 @@ using System.Collections;
 
 public class SpawnController : MonoBehaviour
 {
-    public GameObject spawnPointRight_;
-    public GameObject spawnPointLeft_;
+    [SerializeField]
+    GameObject spawnPointRight_;
+    [SerializeField]
+    GameObject spawnPointLeft_;
 
     float spawnPointRightX_;
     float spawnPointLeftX_;

@@ -6,9 +6,11 @@ public class LifeScript : MonoBehaviour
     int MAXLIFE = 3;
     int life;
 
-    public GameObject[] LifeIcon;
+    [SerializeField]
+    GameObject[] LifeIcon;
 
-    public string GameEndScene;
+    [SerializeField]
+    string GameEndScene;
 
 	void Start()
     {

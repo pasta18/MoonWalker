@@ -3,8 +3,18 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour
 {
-    public float bulletspeed_ = 10f;
-    public int bulletpower_ = 1;
+    [SerializeField]
+    float bulletspeed_ = 10f;
+    [SerializeField]
+    int bulletpower_ = 1;
+
+    public int BulletPower
+    {
+        get
+        {
+            return bulletpower_;
+        }
+    }
 
 	//通常弾は直進のみ
 	void Update()

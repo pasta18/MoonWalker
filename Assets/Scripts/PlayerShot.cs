@@ -3,15 +3,19 @@ using System.Collections;
 
 public class PlayerShot : MonoBehaviour
 {
-    public ShotScript shotScript_;
+    [SerializeField]
+    ShotScript shotScript_;
 
-    public int ShotInterval_ = 15;
+    [SerializeField]
+    int ShotInterval_ = 15;
     int autoshotcount_ = 0;
 
-    public int MAXSHOTCOUNT = 2; //n+1回に１回強い弾出る
+    [SerializeField]
+    int MAXSHOTCOUNT = 2; //n+1回に１回強い弾出る
     int shotcount_ = 0;
 
-    public int MAXNOTINPUTKEY = 180;
+    [SerializeField]
+    int MAXNOTINPUTKEY = 180;
     int notinputkeycount_ = 0;
 
     bool strongshotflag = false;

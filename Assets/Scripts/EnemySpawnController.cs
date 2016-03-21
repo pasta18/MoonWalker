@@ -3,8 +3,10 @@ using System.Collections;
 
 public class EnemySpawnController : MonoBehaviour
 {
-    public GameObject enemyPrefab_;
-    public SpawnController spawnController_;
+    [SerializeField]
+    GameObject enemyPrefab_;
+    [SerializeField]
+    SpawnController spawnController_;
 
     public void SpawnLeft()
     {

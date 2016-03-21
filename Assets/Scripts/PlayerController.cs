@@ -3,8 +3,10 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour 
 {
-    public JumpScript jumpScript_;
-    public PlayerShot playerShot_;
+    [SerializeField]
+    JumpScript jumpScript_;
+    [SerializeField]
+    PlayerShot playerShot_;
     
 	void Start () 
     {

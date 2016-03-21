@@ -3,13 +3,17 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour
 {
-    public MoveScript moveScript_;
-    public int hitpoint_ = 3;
+    [SerializeField]
+    MoveScript moveScript_;
+    [SerializeField]
+    int hitpoint_ = 3;
 
     bool Reversal = false;
 
-    public float Speed_ = 2f;
-    public float ReversalSpeed_ = 4f;
+    [SerializeField]
+    float Speed_ = 2f;
+    [SerializeField]
+    float ReversalSpeed_ = 4f;
 
     Vector2 ReverseValue = new Vector2(0, 180);
 
@@ -49,7 +53,7 @@ public class EnemyScript : MonoBehaviour
 
     void Damage(GameObject bullet)
     {
-        hitpoint_ -= bullet.GetComponent<Bullet>().bulletpower_;
+        hitpoint_ -= bullet.GetComponent<Bullet>().BulletPower;
 
         HitPointCheck();
     }

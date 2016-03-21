@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Image strongShotGage_;
-    public PlayerShot playerShot_;
+    [SerializeField]
+    Image strongShotGage_;
+    [SerializeField]
+    PlayerShot playerShot_;
 
     float maxGage_;
     int maxFlame_;

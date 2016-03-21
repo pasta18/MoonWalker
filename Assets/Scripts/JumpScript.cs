@@ -3,7 +3,8 @@ using System.Collections;
 
 public class JumpScript : MonoBehaviour 
 {
-    public float JumpPower_ = 600f;
+    [SerializeField]
+    float JumpPower_ = 600f;
 
     bool jumpflag_ = false;
 

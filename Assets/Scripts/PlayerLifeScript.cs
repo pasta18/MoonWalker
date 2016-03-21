@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerLifeScript : MonoBehaviour
 {
-    public LifeScript lifeScript_;
+    [SerializeField]
+    LifeScript lifeScript_;
 
     void OnCollisionEnter2D(Collision2D col)
     {

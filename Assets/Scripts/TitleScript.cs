@@ -3,8 +3,10 @@ using System.Collections;
 
 public class TitleScript : MonoBehaviour
 {
-    public GameObject StartIcon_;
-    public GameObject ExitIcon_;
+    [SerializeField]
+    GameObject StartIcon_;
+    [SerializeField]
+    GameObject ExitIcon_;
 
     bool select_start_ = true;
 

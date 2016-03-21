@@ -3,8 +3,10 @@ using System.Collections;
 
 public class ShotScript : MonoBehaviour
 {
-    public GameObject BulletPrefab_;
-    public GameObject StrongBulletPrefab_;
+    [SerializeField]
+    GameObject BulletPrefab_;
+    [SerializeField]
+    GameObject StrongBulletPrefab_;
 
     //弾の生成のみ
     public void Shot()
