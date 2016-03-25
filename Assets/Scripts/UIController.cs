@@ -11,7 +11,6 @@ public class UIController : MonoBehaviour
 
     float maxGage_;
     int maxFlame_;
-    float gageIncrease_;
     float gageHeight_;
 
     float gageValue_ = 0;
@@ -22,13 +21,12 @@ public class UIController : MonoBehaviour
         maxGage_ = strongShotGage_.rectTransform.sizeDelta.x;
         gageHeight_ = strongShotGage_.rectTransform.sizeDelta.y;
         maxFlame_ = playerShot_.MaxStrongShotFlame;
-        gageIncrease_ = maxGage_ / maxFlame_;
 	}
 
     //UIのゲージの反映
 	void Update()
     {
-        gageValue_ = playerShot_.GageValue * gageIncrease_;
+        gageValue_ = ((float)playerShot_.GageValue / maxFlame_) * maxGage_;
 
         strongShotGage_.rectTransform.sizeDelta = new Vector2(gageValue_, gageHeight_);
 	}
