@@ -22,6 +22,7 @@ public class EnemyScript : MonoBehaviour
         Move();
 	}
 
+    // 向いている方向に向かって進む
     void Move()
     {
         if (Reversal)
@@ -34,11 +35,12 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    // 反転する
     public void Reverse()
     {
         gameObject.transform.Rotate(ReverseValue);
 
-        Reversal = true;
+        Reversal = !Reversal;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -51,6 +53,7 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    // 弾に当たるとダメージを受ける
     void Damage(GameObject bullet)
     {
         hitpoint_ -= bullet.GetComponent<Bullet>().BulletPower;
@@ -58,6 +61,7 @@ public class EnemyScript : MonoBehaviour
         HitPointCheck();
     }
 
+    // 死亡判定
     void HitPointCheck()
     {
         if (hitpoint_ <= 0) Destroy(gameObject);

@@ -11,7 +11,7 @@ public class SpawnController : MonoBehaviour
     float spawnPointRightX_;
     float spawnPointLeftX_;
 
-    //取得しとけば少しは軽くなるんじゃね？
+    // 変化しない値なのであらかじめ取得しておく
     void Start()
     {
         spawnPointRightX_ = spawnPointRight_.transform.position.x;

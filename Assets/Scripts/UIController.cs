@@ -15,7 +15,7 @@ public class UIController : MonoBehaviour
 
     float gageValue_ = 0;
 
-    //取得しとけば少しは軽くなるんじゃね？
+    // 変化しない値なのであらかじめ取得しておく
     void Start()
     {
         maxGage_ = strongShotGage_.rectTransform.sizeDelta.x;
