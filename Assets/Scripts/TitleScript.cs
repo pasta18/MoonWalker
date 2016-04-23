@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class TitleScript : MonoBehaviour
@@ -12,6 +13,7 @@ public class TitleScript : MonoBehaviour
 
 	void Update()
     {
+        // タイトル画面の操作
         if (Input.GetKeyDown(KeyCode.Z))
         {
             ChangeScene();
@@ -25,6 +27,7 @@ public class TitleScript : MonoBehaviour
         }
 	}
 
+    // タイトルで選択しているメニューの可視化
     void ChangeSelectIcon()
     {
         StartIcon_.SetActive(!StartIcon_.activeSelf);
@@ -32,11 +35,12 @@ public class TitleScript : MonoBehaviour
         ExitIcon_.SetActive(!ExitIcon_.activeSelf);
     }
 
+    // 画面推移
     void ChangeScene()
     {
         if (select_start_)
         {
-            Application.LoadLevel("GameScene");
+            SceneManager.LoadScene("GameScene");
         }
         else
         {

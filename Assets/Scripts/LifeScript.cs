@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LifeScript : MonoBehaviour
@@ -17,6 +18,7 @@ public class LifeScript : MonoBehaviour
         life = MAXLIFE;
 	}
 
+    // 自機のダメージ処理
     public void Damage()
     {
         if (life > 0)
@@ -28,7 +30,7 @@ public class LifeScript : MonoBehaviour
         else
         {
             //GameOverの処理を書く
-            Application.LoadLevel(GameEndScene);
+            SceneManager.LoadScene(GameEndScene);
         }
     }
 }
