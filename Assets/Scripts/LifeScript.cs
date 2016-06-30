@@ -10,9 +10,6 @@ public class LifeScript : MonoBehaviour
     [SerializeField]
     GameObject[] LifeIcon;
 
-    [SerializeField]
-    string GameEndScene;
-
 	void Start()
     {
         life = MAXLIFE;
@@ -30,7 +27,7 @@ public class LifeScript : MonoBehaviour
         else
         {
             //GameOverの処理を書く
-            SceneManager.LoadScene(GameEndScene);
+            SceneManager.LoadScene("ResultScene");
         }
     }
 }

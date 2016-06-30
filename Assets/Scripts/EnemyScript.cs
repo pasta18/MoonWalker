@@ -7,6 +7,8 @@ public class EnemyScript : MonoBehaviour
     MoveScript moveScript_;
     [SerializeField]
     int hitpoint_ = 3;
+    [SerializeField]
+    int AddPoint = 10;
 
     bool Reversal = false;
 
@@ -64,6 +66,11 @@ public class EnemyScript : MonoBehaviour
     // 死亡判定
     void HitPointCheck()
     {
-        if (hitpoint_ <= 0) Destroy(gameObject);
+        if (hitpoint_ <= 0)
+        {
+            Destroy(gameObject);
+
+            PointController.Add(AddPoint);
+        }
     }
 }
